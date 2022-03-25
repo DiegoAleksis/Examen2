@@ -73,6 +73,11 @@ public class Calculadora {
 
     @Override
     public String toString() {
-        return "La Calculadora es de marca" +marca+ "y" +esCientifica;
+        if (esCientifica==true){
+            return ("La Calculadora es de marca" +marca);
+        }else{
+        return ("La Calculadora es de marca"+esCientifica);
+        }
+
     }
 }
